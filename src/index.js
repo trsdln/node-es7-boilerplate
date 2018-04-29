@@ -1,7 +1,6 @@
 import http from "http";
 
-const hostname = "127.0.0.1";
-const port = 3000;
+import { HOST, PORT, UserSettings } from "./configuration";
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -9,6 +8,7 @@ const server = http.createServer((req, res) => {
   res.end("Node.JS: Hello World\n");
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(PORT, HOST, () => {
+  console.log(`Server running at http://${HOST}:${PORT}/`);
+  console.log("Using user settings", UserSettings);
 });
