@@ -1,0 +1,10 @@
+{
+  "name": "node-es7-boilerplate",
+  "version": "1.0.0",
+  "description": "Node.js boilerplate",
+  "main": "src/index.js",
+  "repository": "git@github.com:trsdln/node-es7-boilerplate.git",
+  "author": "Taras D.",
+  "license": "MIT",
+  "private": true
+}
